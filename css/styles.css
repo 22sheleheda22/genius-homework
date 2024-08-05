@@ -1,0 +1,50 @@
+:root {
+  --beauty-landing-2c1: #011c44;
+  --beauty-landing-2с2: #2b7fff;
+  --beauty-landing-2-background: #ffffff;
+}
+
+/* Base */
+
+body {
+}
+
+.button {
+  /* Batton 2 */
+
+  /* Auto layout */
+  /* display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 16px 32px;
+gap: 10px;
+
+width: 219px;
+height: 53px; */
+
+  /* beauty landing 2/с2 */
+  color: var(--beauty-landing-2-background);
+  background-color: var(--beauty-landing-2с2);
+  border-radius: 32px;
+  cursor: pointer;
+
+  /* Inside auto layout */
+  /* flex: none;
+order: 0;
+flex-grow: 0;
+  */
+}
+.button:hover {
+  background-color: transparent;
+  color: #011c44;
+  border: 2px solid var(--beauty-landing-2с2);
+}
+
+.hero-title .accent {
+color: var(--beauty-landing-2с2);  
+}
+
+.section-title .accent {
+  color: var(--beauty-landing-2с2);
+  /* color: var(--beauty-landing-2с2); */
+}
