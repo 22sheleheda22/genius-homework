@@ -1,33 +1,114 @@
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-weight: 400;
+  src: url('../fonts/roboto-v32-latin-regular.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-weight: 500;
+  src: url('../fonts/roboto-v32-latin-500.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto';
+  font-weight: 700;
+  src: url('../fonts/roboto-v32-latin-700.woff2') format('woff2'); 
+}
 :root {
   --beauty-landing-2c1: #011c44;
   --beauty-landing-2с2: #2b7fff;
+  --beauty-landing-2c3: #4A4A4A;
   --beauty-landing-2-background: #ffffff;
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-latin-regular.woff2') format('woff2'); 
+}
+@font-face {
+  font-display: swap; 
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2'); 
 }
 
 /* Base */
 
 body {
+  color: var(--beauty-landing-2c1);
+  font-family: "Roboto" , sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 1.33;
 }
 
-.button {
-  /* Batton 2 */
+ul {
+  list-style-type: none;
+}
 
+/* Link */
+
+.link{
+color: var(--beauty-landing-2c1);
+  line-height: 1.17;
+}
+
+.link:hover{
+  color: var(--beauty-landing-2с2);
+  font-weight: 700;
+}
+
+/* Hero Section ____________________*/
+.hero-text{
+line-height: 1.17;
+}
+
+.hero-title{
+  color: var(--beauty-landing-2с2); 
+  font-family: "Play", sans-serif;
+font-size: 140px;
+font-weight: 700;
+text-align: left;
+  line-height: 0.8;
+}
+
+.hero-text-bottom{
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--beauty-landing-2c3);
+}
+
+
+
+.button {
+font-size: 18px;
+font-weight: 600;
+line-height: 1.17;
+
+width: 219px;
+height: 53px;
+  color: var(--beauty-landing-2-background);
+  background-color: var(--beauty-landing-2с2);
+  border-radius: 32px;
+  border: 1px solid var(--beauty-landing-2с2);
+  cursor: pointer;
+/* Batton 2 */
   /* Auto layout */
   /* display: flex;
 flex-direction: row;
 align-items: flex-start;
 padding: 16px 32px;
 gap: 10px;
-
-width: 219px;
-height: 53px; */
-
-  /* beauty landing 2/с2 */
-  color: var(--beauty-landing-2-background);
-  background-color: var(--beauty-landing-2с2);
-  border-radius: 32px;
-  cursor: pointer;
-
+ */
   /* Inside auto layout */
   /* flex: none;
 order: 0;
@@ -40,11 +121,76 @@ flex-grow: 0;
   border: 2px solid var(--beauty-landing-2с2);
 }
 
-.hero-title .accent {
-color: var(--beauty-landing-2с2);  
+/* First-section _____________________*/
+
+.section-title {
+  font-family: Play;
+font-size: 64px;
+font-weight: 700;
+line-height: 1.15;
+
 }
 
 .section-title .accent {
   color: var(--beauty-landing-2с2);
-  /* color: var(--beauty-landing-2с2); */
+ }
+
+/* Second-section  __________________*/
+.section-title-text {
+font-size: 22px;
+line-height: 1.72;
+}
+
+.section-title-text .accent {
+font-weight: 600;
+}
+
+/* Third-section _________________*/
+
+.third-section-text{
+color:  #000000;
+}
+/* Fourth-section ___________________*/
+
+.fourth-section-text {
+font-size: 22px;
+line-height: 1.18;
+/* color: #FFFFFF; */
+
+}
+/* Footer _____________________ */
+
+.footer {
+  background: #011C44;
+;
+}
+.link-footer {
+color: var(--beauty-landing-2-background);
+font-size: 16px;
+line-height: 1.17;
+}
+
+.link-footer:hover {
+color: var(--beauty-landing-2с2);
+font-weight: 700;
+}
+
+.adress{
+  color: var(--beauty-landing-2-background);
+  font-size: 16px;
+line-height: 1.17;
+}
+.adress:hover {
+color: var(--beauty-landing-2с2);
+font-weight: 700;
+}
+.footer-text {
+  color: var(--beauty-landing-2-background);
+    font-size: 16px;
+    line-height: 1.17;
+}
+.adress-copyright{
+   color: var(--beauty-landing-2-background);
+    font-size: 13px;
+    line-height: 1.17;
 }
